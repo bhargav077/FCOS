@@ -1,10 +1,10 @@
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
-import torch
-
-if torch._six.PY3:
+#import torch
+import sys
+if sys.version_info[0] >= 3:
     import importlib
     import importlib.util
-    import sys
+#    import sys
 
 
     # from https://stackoverflow.com/questions/67631/how-to-import-a-module-given-the-full-path?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
